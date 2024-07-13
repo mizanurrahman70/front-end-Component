@@ -1,4 +1,4 @@
-import React from 'react';
+
 import profile from '../../../assets/profile/Profile Pic (1).png';
 
 import Rectangle1 from '../../../assets/photos/Rectangle 1.png';
@@ -9,6 +9,7 @@ import Rectangle5 from '../../../assets/photos/Rectangle 5.png';
 import Rectangle6 from '../../../assets/photos/Rectangle 6 (1).png';
 import Rectangle7 from '../../../assets/photos/Rectangle 6 (2).png';
 import Rectangle8 from '../../../assets/photos/Rectangle 6.png';
+import btnPlayer from '../../../assets/photos/video/Btn Player.svg'
 
 const ProfileSection = () => {
   return (
@@ -61,11 +62,24 @@ const ProfileSection = () => {
           <div>
             <h1 className="font-semibold text-2xl mt-2">Video</h1>
             <div>
+              <div className='relative'>
               <img className="h-[100px] w-[210px]" src={Rectangle5} alt="" />
-              <div className="flex space-x-1 mt-2">
+              <img className=' -mt-20 ml-16' src={btnPlayer} alt="" />
+              </div>
+              <div className="flex space-x-1 mt-8">
+                <div className='relative'>
                 <img className="h-[55px] w-[70px]" src={Rectangle6} alt="" />
+                <img className=' w-10 h-9 -mt-10 ml-4' src={btnPlayer} alt="" />
+                </div>
+               
+                <div>
                 <img className="h-[55px] w-[70px]" src={Rectangle7} alt="" />
-                <img className="h-[55px] w-[70px]" src={Rectangle8} alt="" />
+                <img className=' w-10 h-9 -mt-10 ml-4' src={btnPlayer} alt="" />
+                </div>
+             <div>
+             <img className="h-[55px] w-[70px]" src={Rectangle8} alt="" />
+             <img className=' w-10 h-9 -mt-10 ml-4' src={btnPlayer} alt="" />
+             </div>
               </div>
             </div>
             <h1 className="text-end font-medium text-xl text-[#196AA0]">More +</h1>
@@ -148,10 +162,11 @@ const ProfileSection = () => {
           <h1 className="text-end font-medium text-xl text-[#196AA0]">More +</h1>
         </div>
         
-        <div>
+        <div className='relative'>
           <h1 className="font-semibold text-2xl mt-2">Video</h1>
           <img src={Rectangle5} alt="" />
-          <h1 className="text-end font-medium text-xl text-[#196AA0]">More +</h1>
+          <img className=' -mt-20 ml-40' src={btnPlayer} alt="" />
+          <h1 className="text-end font-medium text-xl text-[#196AA0] mt-8">More +</h1>
         </div>
       </div>
     </div>
