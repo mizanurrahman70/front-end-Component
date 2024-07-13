@@ -47,7 +47,7 @@ const ProfileSection = () => {
         </div>
         
         {/* Responsive Images for Mobile */}
-        <div className="flex justify-around md:hidden space-x-6 -mt-20">
+        <div className="flex justify-around lg:hidden space-x-6 -mt-20">
           <div>
             <h1 className="font-semibold text-2xl">Photo</h1>
             <div className="grid grid-cols-2 mt-2">
