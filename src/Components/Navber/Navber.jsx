@@ -4,6 +4,7 @@ import message from "../../assets/icons/Message.svg";
 import notification from "../../assets/icons/Notification.svg";
 import options from "../../assets/icons/Options.svg";
 import profile from "../../assets/icons/Profile Pic.png";
+import logo from'../../assets/logo/Logo.svg'
 
 const Navber = () => {
   const itemList = (
@@ -32,7 +33,7 @@ const Navber = () => {
     <div className="bg-[#1B1C1E] w-full">
       <div className="navbar container mx-auto">
         <div className="flex-1">
-          <img src="/src/assets/logo/Logo.svg" alt="" />
+          <img src={logo} alt="" />
         </div>
         <div className="hidden sm:hidden lg:flex ">
           <ul className="menu menu-horizontal px-1">{itemList}</ul>
